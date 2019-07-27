@@ -1,0 +1,17 @@
+SMAP
+productlist_jsp.java
+JSP
+*S JSP
+*F
++ 0 productlist.jsp
+WEB-INF/productlist.jsp
+*L
+5,111:54
+115:189,11
+116:200
+117,7:201,3
+124:222
+125,3:223,3
+128,7:232
+134,5:167
+*E

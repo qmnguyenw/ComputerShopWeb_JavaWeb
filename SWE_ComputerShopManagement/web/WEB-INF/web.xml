@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>SigninController</servlet-name>
+        <servlet-class>controllers.SigninController</servlet-class>
+        <init-param>
+            <param-name>Password</param-name>
+            <param-value>654321</param-value>
+        </init-param>
+    </servlet>
+    <servlet>
+        <servlet-name>HomeController</servlet-name>
+        <servlet-class>controllers.HomeController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SignoutController</servlet-name>
+        <servlet-class>controllers.SignoutController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SigninController</servlet-name>
+        <url-pattern>/signin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>HomeController</servlet-name>
+        <url-pattern>/home</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SignoutController</servlet-name>
+        <url-pattern>/signout</url-pattern>
+    </servlet-mapping>
+    <welcome-file-list>
+        <welcome-file>signin</welcome-file>
+    </welcome-file-list>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
